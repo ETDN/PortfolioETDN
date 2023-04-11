@@ -16,7 +16,7 @@ import Icon3 from "../../images/cooking.svg";
 const Services = () => {
   return (
     <>
-      <ServicesContainer id="services">
+      <ServicesContainer id="extras">
         <ServicesH1>Hobbies</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>

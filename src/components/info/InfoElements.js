@@ -1,8 +1,23 @@
 import styled from "styled-components";
+import noise from "../../images/noise.png";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#010606" : "#f9f9f9")};
+  position: relative; /* set position to relative for the :after pseudo-element */
+  color: #fff;
+  background: ${({ lightBg }) => (lightBg ? "#516d9d" : "#fe9fb3")};
+
+  /* add the :after pseudo-element */
+  &:after {
+    content: ""; /* specify content as an empty string */
+    position: absolute; /* set position to absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${noise});
+    opacity: 0.1;
+  }
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

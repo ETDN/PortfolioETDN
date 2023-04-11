@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
-import { Link as LinkR } from "react-router-dom";
+import { NavLink as LinkR } from "react-router-dom";
 
 export const NavB = styled.nav`
-  background: transparent;
-  height: 70px;
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+  height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -83,9 +83,8 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
-    border-bottom: 3px solid #01bf71;
+  :active {
+    border-bottom: 3px solid #516d9d;
   }
 `;
 
@@ -111,7 +110,7 @@ export const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &.hover {
+  :hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;

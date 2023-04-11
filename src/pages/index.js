@@ -10,6 +10,7 @@ import {
   homeObjFour,
 } from "../components/info/Data";
 import Services from "../components/services";
+import FooterElement from "../components/footer/index.js";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ const Home = () => {
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
       <Services />
+      <FooterElement />
     </>
   );
 };

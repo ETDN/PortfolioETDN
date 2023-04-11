@@ -34,11 +34,11 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "extras",
+  id: "designs",
   lightBg: true,
   lightText: true,
   lightTextDesc: false,
-  topLine: "About me",
+  topLine: "Designs",
   headline: "Typescript Pokedex with PokeAPI",
   description:
     "Nice looking Pokedex website with the use of the PokeAPI, it allows to search your favorite pokemons.",
@@ -52,7 +52,7 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
-  id: "contact",
+  id: "contactme",
   lightBg: false,
   lightText: false,
   topLine: "Contact",

@@ -1,14 +1,14 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ContactMe from "./pages/contactme";
 import Home from "./pages";
+import Contact from "./pages/contact";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/contactme" element={<ContactMe />}></Route>
+        <Route path="/contactme" element={<Contact />}></Route>
       </Routes>
     </Router>
   );
