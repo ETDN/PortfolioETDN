@@ -4,3 +4,20 @@
   padding: 0;
   font-family: "Encode Sans Expanded", sans-serif;
 }
+
+@font-face {
+  font-family: "0Arame";
+  src: local("ARAME-REGULAR.TTF"),
+    url("./fonts/ARAME-REGULAR.TTF") format(truetype);
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: local("SpaceMono-Bold.ttf"),
+    url("./fonts/SpaceMono-Bold.ttf") format(truetype);
+}
+
+:root {
+  --arame: "0Arame";
+  --spacemono: "Space Mono";
+}

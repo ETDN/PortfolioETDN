@@ -11,7 +11,7 @@ import {
   VideoBg,
 } from "./HeroElements";
 import bg_video from "../../videos/sunset.mp4";
-import { Button } from "../ButtonElement";
+import { ButtonElement } from "../ButtonElement";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -28,12 +28,18 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Emilie Teodoro Do Nascimento</HeroH1>
         <HeroP>Software & Mobile Front-End Developer</HeroP>
+        <HeroBtnWrapper>
+          <ButtonElement
+            to="contactme"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+          >
+            Contact me? {hover ? <ArrowForward /> : <ArrowRight />}
+          </ButtonElement>
+        </HeroBtnWrapper>
       </HeroContent>
-      <HeroBtnWrapper>
-        <Button to="contactme" onMouseEnter={onHover} onMouseLeave={onHover}>
-          Contact me? {hover ? <ArrowForward /> : <ArrowRight />}
-        </Button>
-      </HeroBtnWrapper>
     </HeroContainer>
   );
 };

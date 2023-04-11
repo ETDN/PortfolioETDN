@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import Sidebar from "../components/sidebar";
 import Navbar from "../components/navbar";
 import HeroSection from "../components/hero";
+import InfoSection from "../components/info";
+import {
+  homeObjOne,
+  homeObjThree,
+  homeObjTwo,
+  homeObjFour,
+} from "../components/info/Data";
+import Services from "../components/services";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +24,11 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
+      <InfoSection {...homeObjOne} />
+      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjThree} />
+      <InfoSection {...homeObjFour} />
+      <Services />
     </>
   );
 };
