@@ -14,7 +14,7 @@ import {
 import Icon1 from "../../images/workout.svg";
 import Icon2 from "../../images/music.svg";
 import Icon3 from "../../images/cooking.svg";
-import bg_video from "../../videos/retro.mp4";
+import bg_video from "../../videos/retro_pool.mp4";
 
 const Services = () => {
   return (

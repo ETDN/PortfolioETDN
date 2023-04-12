@@ -118,7 +118,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   font-family: var(--spacemono);
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};

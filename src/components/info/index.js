@@ -16,7 +16,7 @@ import {
   TopLine,
   VideoBg,
 } from "./InfoElements";
-import bg_video from "../../videos/sky.mp4";
+import bg_video from "../../videos/retro.mp4";
 
 const InfoSection = ({
   videoBg,
@@ -65,9 +65,9 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
+              {/* <ImgWrap>
                 <Img src={img} alt={alt} />
-              </ImgWrap>
+              </ImgWrap> */}
             </Column2>
           </InfoRow>
         </InfoWrapper>
