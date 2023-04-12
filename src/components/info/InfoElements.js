@@ -1,27 +1,51 @@
 import styled from "styled-components";
-import noise from "../../images/noise.png";
 
 export const InfoContainer = styled.div`
-  color: #fff;
-  position: relative; /* set position to relative for the :after pseudo-element */
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#516d9d" : "#fe9fb3")};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 900px;
+  position: relative;
+  z-index: 1;
 
-  /* add the :after pseudo-element */
-  &:after {
-    content: ""; /* specify content as an empty string */
-    position: absolute; /* set position to absolute */
+  :before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(${noise});
-    opacity: 0.1;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0% rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2;
   }
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
+`;
+
+export const InfoBg = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`;
+
+export const VideoBg = styled.video`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a40;
 `;
 
 export const InfoWrapper = styled.div`
@@ -68,7 +92,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: white;
   font-size: 16px;
   font-family: var(--spacemono);
   line-height: 16px;

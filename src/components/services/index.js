@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ServiceBg,
   ServicesCard,
   ServicesContainer,
   ServicesH1,
@@ -7,16 +8,21 @@ import {
   ServicesIcon,
   ServicesP,
   ServicesWrapper,
+  VideoBg,
 } from "./ServicesElements";
 
 import Icon1 from "../../images/workout.svg";
 import Icon2 from "../../images/music.svg";
 import Icon3 from "../../images/cooking.svg";
+import bg_video from "../../videos/retro.mp4";
 
 const Services = () => {
   return (
     <>
       <ServicesContainer id="extras">
+        <ServiceBg>
+          <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+        </ServiceBg>
         <ServicesH1>Hobbies</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>

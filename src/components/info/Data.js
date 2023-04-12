@@ -1,6 +1,6 @@
 export const homeObjOne = {
   id: "about",
-  lightBg: true,
+  videoBg: true,
   lightText: true,
   lightTextDesc: false,
   topLine: "About me",
@@ -14,11 +14,12 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  bg_video: "../videos/retro_pool.mp4",
 };
 
 export const homeObjTwo = {
   id: "projects",
-  lightBg: false,
+  videoBg: false,
   lightText: false,
   topLine: "Personal projects",
   headline: "Typescript, React & Flutter projects",
@@ -31,11 +32,12 @@ export const homeObjTwo = {
   dark: true,
   primary: false,
   darkText: true,
+  bg_video: "../videos/sunset.mp4",
 };
 
 export const homeObjThree = {
   id: "designs",
-  lightBg: true,
+  videoBg: false,
   lightText: true,
   lightTextDesc: false,
   topLine: "Designs",
@@ -49,11 +51,12 @@ export const homeObjThree = {
   dark: true,
   primary: true,
   darkText: false,
+  bg_video: "../videos/retro_pool.mp4",
 };
 
 export const homeObjFour = {
   id: "contactme",
-  lightBg: false,
+  videoBg: true,
   lightText: false,
   topLine: "Contact",
   headline: "Ask me questions, give me adivces and so on...",
@@ -65,4 +68,5 @@ export const homeObjFour = {
   dark: true,
   primary: false,
   darkText: true,
+  bg_video: "../videos/sunset.mp4",
 };

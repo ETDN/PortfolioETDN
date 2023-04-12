@@ -7,17 +7,19 @@ import {
   Heading,
   Img,
   ImgWrap,
+  InfoBg,
   InfoContainer,
   InfoRow,
   InfoWrapper,
   Subtitle,
   TextWrapper,
   TopLine,
+  VideoBg,
 } from "./InfoElements";
-import test from "../../images/design.svg";
+import bg_video from "../../videos/sky.mp4";
 
 const InfoSection = ({
-  lightBg,
+  videoBg,
   id,
   imgStart,
   topLine,
@@ -34,7 +36,10 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer videoBg={videoBg} id={id}>
+        <InfoBg>
+          <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+        </InfoBg>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
