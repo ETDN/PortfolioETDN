@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 900px;
+  position: relative;
+  z-index: 2; */
+  background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,15 +57,14 @@ export const VideoBg = styled.video`
 `;
 
 export const InfoWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 860px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
+  z-index: 3;
+  max-width: 1000px;
+  position: absolute;
+  padding: 8px 64px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 export const InfoRow = styled.div`
@@ -122,6 +129,7 @@ export const Subtitle = styled.p`
   line-height: 24px;
   font-family: var(--spacemono);
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  z-index: 2;
 `;
 
 export const BtnWrap = styled.div`

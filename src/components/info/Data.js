@@ -1,72 +1,29 @@
 export const homeObjOne = {
   id: "about",
-  videoBg: true,
   lightText: true,
-  lightTextDesc: false,
   topLine: "About me",
   headline: "HES-SO Information Technology Student",
   description:
     "24 years old, I'm from Switzerland. I have a huge interest for Front-End Development, UI & Design.",
   buttonLabel: "Open in Linkedin",
   imgStart: false,
-  // img: require("../../images/work.svg").default,
-  alt: "Pokedex",
   dark: true,
-  primary: true,
+  primary: false,
   darkText: false,
   bg_video: "../videos/retro_pool.mp4",
 };
 
-// export const homeObjTwo = {
-//   id: "project",
-//   videoBg: false,
-//   lightText: false,
-//   topLine: "Personal projects",
-//   headline: "Typescript, React & Flutter projects",
-//   description:
-//     "All of my personal projects, with source code on GitHub and Mockups on Figma.",
-//   buttonLabel: "Open in GitHub",
-//   imgStart: false,
-//   img: require("../../images/work.svg").default,
-//   alt: "work",
-//   dark: true,
-//   primary: false,
-//   darkText: true,
-//   bg_video: "../videos/sunset.mp4",
-// };
-
-// export const homeObjThree = {
-//   id: "designs",
-//   videoBg: false,
-//   lightText: true,
-//   lightTextDesc: false,
-//   topLine: "Designs",
-//   headline: "Typescript Pokedex with PokeAPI",
-//   description:
-//     "Nice looking Pokedex website with the use of the PokeAPI, it allows to search your favorite pokemons.",
-//   buttonLabel: "Open in GitHub",
-//   imgStart: false,
-//   img: require("../../images/workout.svg").default,
-//   alt: "Pokedex",
-//   dark: true,
-//   primary: true,
-//   darkText: false,
-//   bg_video: "../videos/retro_pool.mp4",
-// };
-
-// export const homeObjFour = {
-//   id: "contactme",
-//   videoBg: true,
-//   lightText: false,
-//   topLine: "Contact",
-//   headline: "Ask me questions, give me adivces and so on...",
-//   description: "Promise, I won't bite...",
-//   buttonLabel: "Write me",
-//   imgStart: false,
-//   img: require("../../images/contact.svg").default,
-//   alt: "work",
-//   dark: true,
-//   primary: false,
-//   darkText: true,
-//   bg_video: "../videos/sunset.mp4",
-// };
+export const homeObjTwo = {
+  id: "extras",
+  lightText: true,
+  topLine: "Extras",
+  headline: "Music & Anime ",
+  description:
+    " I listen to a lot of rap, US, UK & French rap. I also enjoy pop, like Beyoncé, The Weekend, SZA & so on and also K-pop. Additionally, I like rock, like Muse or Arctic Monkeys",
+  buttonLabel: "Open in Spotify",
+  imgStart: false,
+  dark: true,
+  primary: false,
+  darkText: false,
+  bg_video: "../videos/sunset.mp4",
+};

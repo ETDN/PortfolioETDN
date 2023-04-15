@@ -17,6 +17,10 @@ import Undefined from "../../images/undefined.png";
 import bg_video from "../../videos/sky.mp4";
 
 const Projects = () => {
+  const openLinkInNewTab = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <>
       <ProjectContainer id="projects">
@@ -25,12 +29,16 @@ const Projects = () => {
         </ProjectBg>
         <ProjectH1>Projects</ProjectH1>
         <ProjectWrapper>
-          <ProjectCard>
+          <ProjectCard
+            onClick={() =>
+              openLinkInNewTab("https://github.com/ETDN/pokedex_typescript")
+            }
+          >
             <ProjectIcon src={Pokeball} />
             <ProjectH2>Pokedex</ProjectH2>
             <ProjectP>
               Pokedex application with the use of PokeAPI. Figma mockup link,
-              coded in Typescript
+              coded in Typescript - Still
             </ProjectP>
           </ProjectCard>
           <ProjectCard>
@@ -40,11 +48,6 @@ const Projects = () => {
               Mobile app to search and buy plants, UI focused. With the use of
               youtube tutorials
             </ProjectP>
-          </ProjectCard>
-          <ProjectCard>
-            <ProjectIcon src={Undefined} />
-            <ProjectH2>Undefined</ProjectH2>
-            <ProjectP>To be done...</ProjectP>
           </ProjectCard>
           <ProjectCard>
             <ProjectIcon src={Undefined} />
