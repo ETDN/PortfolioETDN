@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import "../contact/Contact.css";
 
 export const ContactContainer = styled.div`
   background: #0c0c0c;
@@ -33,6 +32,16 @@ export const VideoBg = styled.video`
   background: #232a40;
 `;
 
+export const ContactContent = styled.div`
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 100vh;
+  position: relative;
+`;
+
 export const ContactH1 = styled.h1`
   color: white;
   font-size: 2.5rem;
@@ -43,6 +52,32 @@ export const ContactH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
+`;
+
+export const ContentP = styled.p`
+  margin-top: 24px;
+  color: #fff;
+  font-family: var(--arame);
+  font-size: 24px;
+  text-align: center;
+  max-width: 600px;
+  z-index: 3;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
+
+export const ContactBtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
 `;
 
 export const FormWrap = styled.div`
@@ -132,7 +167,7 @@ export const FormInput = styled.input`
   color: #333;
 `;
 
-export const FormInputMsg = styled.input`
+export const FormInputMsg = styled.textarea`
   font-family: var(--spacemono);
   width: 100%;
   height: 200px;
@@ -143,6 +178,7 @@ export const FormInputMsg = styled.input`
   background-color: #f2f2f2;
   font-size: 16px;
   color: #333;
+  word-wrap: break-word;
 `;
 
 export const FormButton = styled.button`
