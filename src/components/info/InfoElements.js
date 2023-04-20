@@ -1,19 +1,12 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 900px;
-  position: relative;
-  z-index: 2; */
   background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 900px;
+  height: 850px;
   position: relative;
   z-index: 1;
 

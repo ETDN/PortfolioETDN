@@ -1,4 +1,17 @@
 import React, { useState } from "react";
+import {
+  ContactContainer,
+  Form,
+  FormContent,
+  FormWrap,
+  FormButton,
+  FormInput,
+  FormInputMsg,
+  ContactBg,
+  VideoBg,
+  ContactH1,
+} from "./ContactMe";
+import bg_video from "../../videos/sky.mp4";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/e7b20dd0-d8a6-11ed-b656-837b57be60e0";
@@ -80,47 +93,38 @@ const ContactMe = () => {
   }
 
   return (
-    <form
-      action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
-      method="POST"
-      target="_blank"
-    >
-      <div className="mb-3 pt-0">
-        <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <textarea
-          placeholder="Your message"
-          name="message"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <button
-          className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-          type="submit"
-        >
-          Send a message
-        </button>
-      </div>
-    </form>
+    <>
+      <ContactContainer>
+        <ContactBg>
+          <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+        </ContactBg>
+        <ContactH1>Message </ContactH1>
+        <FormWrap>
+          <FormContent>
+            <Form
+              action={FORM_ENDPOINT}
+              onSubmit={handleSubmit}
+              method="POST"
+              target="_blank"
+            >
+              <FormInput
+                type="text"
+                placeholder="Your name"
+                name="name"
+                required
+              />
+              <FormInput type="email" placeholder="Email" name="email" />
+              <FormInputMsg
+                placeholder="Your message"
+                name="message"
+                required
+              />
+              <FormButton type="submit">Send a message</FormButton>
+            </Form>
+          </FormContent>
+        </FormWrap>
+      </ContactContainer>
+    </>
   );
 };
 

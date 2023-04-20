@@ -7,18 +7,9 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 900px;
+  height: 850px;
   position: relative;
   z-index: 1;
-  /* height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
-  z-index: 1; */
 
   :before {
     content: "";
