@@ -9,7 +9,6 @@ import {
   homeObjTwo,
   // homeObjFour,
 } from "../components/info/Data";
-import Services from "../components/services";
 import FooterElement from "../components/footer/index.js";
 import Projects from "../components/projects";
 
