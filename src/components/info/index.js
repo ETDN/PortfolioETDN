@@ -13,8 +13,7 @@ import {
   TopLine,
   VideoBg,
 } from "./InfoElements";
-import bg_video from "../../videos/retro.mp4";
-import { NavBtn, NavBtnLink } from "../navbar/NavbarElement";
+import bg_video from "../../videos/retro2.mp4";
 
 const InfoSection = ({
   videoBg,
