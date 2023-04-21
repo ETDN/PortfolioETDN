@@ -39,11 +39,7 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <NavBtn>
-                    <NavBtnLink to="/contactme">Contact me</NavBtnLink>
-                  </NavBtn>
-                </BtnWrap>
+                <BtnWrap></BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2></Column2>

@@ -16,7 +16,7 @@ import {
   WebsitesRights,
 } from "./FooterElement";
 
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaSpotify, FaGithub } from "react-icons/fa";
 
 const FooterElement = () => {
   const toggle = () => {
@@ -25,25 +25,6 @@ const FooterElement = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Portfolio website</FooterLinkTitle>
-              <FooterLink to="contactme">Source code</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About me</FooterLinkTitle>
-              <FooterLink to="contactme">Contact</FooterLink>
-              <FooterLink to="contactme">Linkedin</FooterLink>
-              <FooterLink to="contactme">GitHub</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Extras</FooterLinkTitle>
-              <FooterLink to="contactme">Spotify</FooterLink>
-              <FooterLink to="contactme">Instagram</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggle}>
@@ -57,11 +38,25 @@ const FooterElement = () => {
                 <FaInstagram />{" "}
               </SocialIconLink>
               <SocialIconLink
+                href="//https://github.com/ETDN/PortfolioETDN"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <FaGithub />{" "}
+              </SocialIconLink>
+              <SocialIconLink
                 href="//www.linkedin.ch/etdn"
                 target="_blank"
                 aria-label="Linkedin"
               >
                 <FaLinkedin />{" "}
+              </SocialIconLink>
+              <SocialIconLink
+                href="//https://open.spotify.com/user/delteodoro?si=04d056145412471e"
+                target="_blank"
+                aria-label="Spotify"
+              >
+                <FaSpotify />{" "}
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
