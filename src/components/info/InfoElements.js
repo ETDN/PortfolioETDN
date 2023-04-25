@@ -41,7 +41,7 @@ export const InfoBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const VideoBg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -54,6 +54,7 @@ export const InfoWrapper = styled.div`
   position: absolute;
   padding: 8px 64px;
   display: flex;
+  float: left;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -62,6 +63,7 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
+  margin-top: 50px;
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1` : `'col1 col2'`};
@@ -69,7 +71,11 @@ export const InfoRow = styled.div`
   @media screen and(max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2` : `'col1 col1' 'col2 col2'`};
-  } ;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 50%;
+  }
 `;
 
 export const Column1 = styled.div`

@@ -10,7 +10,7 @@ import {
   HeroP,
   VideoBg,
 } from "./HeroElements";
-import bg_video from "../../videos/sunset.mp4";
+import bg_video from "../../videos/sunset.gif";
 import { ButtonElement } from "../ButtonElement";
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+        <VideoBg src={bg_video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Emilie Teodoro Do Nascimento</HeroH1>

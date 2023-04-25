@@ -13,7 +13,7 @@ import {
   TopLine,
   VideoBg,
 } from "./InfoElements";
-import bg_video from "../../videos/retro2.mp4";
+import bg_video from "../../videos/retro2.gif";
 
 const InfoSection = ({
   videoBg,
@@ -29,7 +29,7 @@ const InfoSection = ({
     <>
       <InfoContainer videoBg={videoBg} id={id}>
         <InfoBg>
-          <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+          <VideoBg src={bg_video} type="video/mp4" />
         </InfoBg>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>

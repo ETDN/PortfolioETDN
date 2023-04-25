@@ -14,7 +14,7 @@ import {
   ContactBtnWrapper,
 } from "./ContactMe";
 import { ArrowForward, ArrowRight } from "../hero/HeroElements";
-import bg_video from "../../videos/goodbye.mp4";
+import bg_video from "../../videos/goodbye.gif";
 import { ButtonElement } from "../ButtonElement";
 
 const FORM_ENDPOINT =
@@ -97,7 +97,7 @@ const ContactMe = () => {
       <>
         <ContactContainer>
           <ContactBg>
-            <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+            <VideoBg src={bg_video} type="video/mp4" />
           </ContactBg>
           <ContactH1>Thank you for your message </ContactH1>
           <ContentP>{status}</ContentP>

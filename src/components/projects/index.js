@@ -14,7 +14,7 @@ import {
 import Pokeball from "../../images/pokeball.png";
 import Plant from "../../images/plant.png";
 import Undefined from "../../images/undefined.png";
-import bg_video from "../../videos/sky.mp4";
+import bg_video from "../../videos/sky.gif";
 
 const Projects = () => {
   const openLinkInNewTab = (link) => {
@@ -25,7 +25,7 @@ const Projects = () => {
     <>
       <ProjectContainer id="projects">
         <ProjectBg>
-          <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+          <VideoBg src={bg_video} type="video/mp4" />
         </ProjectBg>
         <ProjectH1>Projects</ProjectH1>
         <ProjectWrapper>
