@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const ProjectContainer = styled.div`
   background: #0c0c0c;
@@ -74,7 +74,7 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  background: #fff;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -92,10 +92,33 @@ export const ProjectCard = styled.div`
   }
 `;
 
+export const rotateAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
 export const ProjectIcon = styled.img`
   height: 100px;
-  width: 100px;
-  margin-bottom: 10px;
+  width: 140px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+  &.projectIconAnimation1 {
+    height: 80px;
+    width: 80px;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  &.projectIconAnimation2 {
+    &:hover {
+      transform: rotate(-45.77deg);
+    }
+  }
+  z-index: 3;
 `;
 
 export const ProjectH1 = styled.h1`
@@ -111,12 +134,14 @@ export const ProjectH1 = styled.h1`
 `;
 
 export const ProjectH2 = styled.h2`
+  color: white;
   font-size: 1rem;
   font-family: var(--arame);
   margin-bottom: 10px;
 `;
 
 export const ProjectP = styled.p`
+  color: white;
   font-size: 1rem;
   font-family: var(--spacemono);
   text-align: center;

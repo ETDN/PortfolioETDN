@@ -46,7 +46,7 @@ export const ContactH1 = styled.h1`
   color: white;
   font-size: 2.5rem;
   font-family: var(--arame);
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   z-index: 3;
 
   @media screen and (max-width: 480px) {
@@ -189,11 +189,31 @@ export const FormButton = styled.button`
   padding: 10px;
   border: none;
   border-radius: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   background-color: white;
   font-size: 16px;
   color: #516d9d;
   cursor: pointer;
   transition: all 0.3s ease;
+`;
+
+export const BackButton = styled.button`
+  font-family: var(--spacemono);
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: white;
+  font-size: 16px;
+  color: #516d9d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 3;
 `;
 
 export const Text = styled.span`

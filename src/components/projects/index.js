@@ -12,7 +12,7 @@ import {
 } from "./ProjectElement";
 
 import Pokeball from "../../images/pokeball.png";
-import Plant from "../../images/plant.png";
+import Shoes from "../../images/nike_stussy.png";
 import Undefined from "../../images/undefined.png";
 import bg_video from "../../videos/sky.gif";
 
@@ -34,7 +34,7 @@ const Projects = () => {
               openLinkInNewTab("https://github.com/ETDN/pokedex_typescript")
             }
           >
-            <ProjectIcon src={Pokeball} />
+            <ProjectIcon src={Pokeball} className="projectIconAnimation1" />
             <ProjectH2>Pokedex</ProjectH2>
             <ProjectP>
               Pokedex application with the use of PokeAPI. Figma mockup link,
@@ -42,8 +42,8 @@ const Projects = () => {
             </ProjectP>
           </ProjectCard>
           <ProjectCard>
-            <ProjectIcon src={Plant} />
-            <ProjectH2>Plant App Flutter</ProjectH2>
+            <ProjectIcon src={Shoes} className="projectIconAnimation2" />
+            <ProjectH2>ETDN's shoes</ProjectH2>
             <ProjectP>
               Mobile app to search and buy plants, UI focused. With the use of
               youtube tutorials

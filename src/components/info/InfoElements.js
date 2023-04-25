@@ -74,7 +74,7 @@ export const InfoRow = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: 50%;
+    margin-top: 45%;
   }
 `;
 

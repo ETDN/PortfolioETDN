@@ -12,10 +12,12 @@ import {
   ContactH1,
   ContentP,
   ContactBtnWrapper,
+  BackButton,
 } from "./ContactMe";
 import { ArrowForward, ArrowRight } from "../hero/HeroElements";
 import bg_video from "../../videos/goodbye.gif";
 import { ButtonElement } from "../ButtonElement";
+import { ImHome } from "react-icons/im";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/e7b20dd0-d8a6-11ed-b656-837b57be60e0";
@@ -121,9 +123,18 @@ const ContactMe = () => {
     <>
       <ContactContainer>
         <ContactBg>
-          <VideoBg autoPlay loop muted src={bg_video} type="video/mp4" />
+          <VideoBg src={bg_video} type="video/mp4" />
         </ContactBg>
         <ContactH1>Message </ContactH1>
+        <ButtonElement
+          to="/"
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          primary="true"
+          dark="true"
+        >
+          Back Home {hover ? <ArrowForward /> : <ArrowRight />}
+        </ButtonElement>
         <FormWrap>
           <FormContent>
             <Form
