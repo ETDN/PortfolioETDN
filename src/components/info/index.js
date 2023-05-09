@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BtnWrap,
   Column1,
@@ -13,8 +13,6 @@ import {
   VideoBg,
 } from "./InfoElements";
 import bg_video from "../../videos/retro2.gif";
-import { ButtonElement } from "../ButtonElement";
-import { ArrowForward, ArrowRight } from "../hero/HeroElements";
 
 const InfoSection = ({
   videoBg,

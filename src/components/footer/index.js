@@ -11,7 +11,7 @@ import {
   WebsitesRights,
 } from "./FooterElement";
 
-import { FaInstagram, FaLinkedin, FaSpotify, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaSpotify, FaGithub } from "react-icons/fa";
 
 const FooterElement = () => {
   const toggle = () => {
