@@ -119,6 +119,14 @@ export const ProjectIcon = styled.img`
     }
   }
   z-index: 3;
+  &.projectIconAnimation3 {
+    height: 80px;
+    width: 80px;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  z-index: 3;
 `;
 
 export const ProjectH1 = styled.h1`

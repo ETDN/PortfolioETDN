@@ -17,6 +17,11 @@ const FooterElement = () => {
   const toggle = () => {
     scroll.scrollToTop();
   };
+
+  const openLinkInNewTab = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -29,24 +34,31 @@ const FooterElement = () => {
               ETDN &#169; {new Date().getFullYear()} All rights reserved.
             </WebsitesRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                <FaInstagram />{" "}
-              </SocialIconLink>
               <SocialIconLink
-                href="//https://github.com/ETDN/PortfolioETDN"
+                className="socialLink1"
+                onClick={() =>
+                  openLinkInNewTab("https://github.com/ETDN/PortfolioETDN")
+                }
                 target="_blank"
                 aria-label="GitHub"
               >
                 <FaGithub />{" "}
               </SocialIconLink>
               <SocialIconLink
-                href="//www.linkedin.ch/etdn"
+                className="socialLink2"
+                onClick={() => openLinkInNewTab("www.linkedin.ch/etdn")}
                 target="_blank"
                 aria-label="Linkedin"
               >
                 <FaLinkedin />{" "}
               </SocialIconLink>
               <SocialIconLink
+                className="socialLink3"
+                onClick={() =>
+                  openLinkInNewTab(
+                    "https://open.spotify.com/user/delteodoro?si=04d056145412471e"
+                  )
+                }
                 href="//https://open.spotify.com/user/delteodoro?si=04d056145412471e"
                 target="_blank"
                 aria-label="Spotify"

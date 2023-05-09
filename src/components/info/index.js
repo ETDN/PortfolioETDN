@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BtnWrap,
   Column1,
-  Column2,
   Heading,
   InfoBg,
   InfoContainer,
@@ -14,6 +13,8 @@ import {
   VideoBg,
 } from "./InfoElements";
 import bg_video from "../../videos/retro2.gif";
+import { ButtonElement } from "../ButtonElement";
+import { ArrowForward, ArrowRight } from "../hero/HeroElements";
 
 const InfoSection = ({
   videoBg,
@@ -24,6 +25,8 @@ const InfoSection = ({
   headline,
   darkText,
   description,
+  to,
+  button_label,
 }) => {
   return (
     <>
@@ -41,7 +44,6 @@ const InfoSection = ({
                 <BtnWrap></BtnWrap>
               </TextWrapper>
             </Column1>
-            <Column2></Column2>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

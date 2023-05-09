@@ -13,7 +13,7 @@ import {
 
 import Pokeball from "../../images/pokeball.png";
 import Shoes from "../../images/nike_stussy.png";
-import Undefined from "../../images/undefined.png";
+import Sport from "../../images/sports.png";
 import bg_video from "../../videos/sky.gif";
 
 const Projects = () => {
@@ -41,7 +41,11 @@ const Projects = () => {
               coded in Typescript - Still
             </ProjectP>
           </ProjectCard>
-          <ProjectCard>
+          <ProjectCard
+            onClick={() =>
+              openLinkInNewTab("https://github.com/ETDN/sneakers_etdn")
+            }
+          >
             <ProjectIcon src={Shoes} className="projectIconAnimation2" />
             <ProjectH2>ETDN's shoes</ProjectH2>
             <ProjectP>
@@ -50,9 +54,12 @@ const Projects = () => {
             </ProjectP>
           </ProjectCard>
           <ProjectCard>
-            <ProjectIcon src={Undefined} />
-            <ProjectH2>Undefined</ProjectH2>
-            <ProjectP>To be done...</ProjectP>
+            <ProjectIcon src={Sport} className="projectIconAnimation3" />
+            <ProjectH2>Installation sportives</ProjectH2>
+            <ProjectP>
+              Web application for the reservation and planification of the
+              Sierre's sport infrastructure
+            </ProjectP>
           </ProjectCard>
         </ProjectWrapper>
       </ProjectContainer>

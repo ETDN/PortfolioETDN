@@ -11,6 +11,8 @@ export const homeObjOne = {
   primary: false,
   darkText: false,
   bg_video: "../videos/retro_pool.mp4",
+  button_label: "Linkedin",
+  to: "www.linkedin/in/etdn",
 };
 
 export const homeObjTwo = {
@@ -26,4 +28,6 @@ export const homeObjTwo = {
   primary: false,
   darkText: false,
   bg_video: "../videos/sunset.mp4",
+  button_label: "Spotify",
+  to: "www.spotify/etdn",
 };
