@@ -49,13 +49,13 @@ const Projects = () => {
             <ProjectIcon src={Shoes} className="projectIconAnimation2" />
             <ProjectH2>ETDN's shoes</ProjectH2>
             <ProjectP>
-              Mobile app to search and buy plants, UI focused. With the use of
+              Mobile app to search and buy shoes, UI focused. With the use of
               youtube tutorials
             </ProjectP>
           </ProjectCard>
           <ProjectCard>
             <ProjectIcon src={Sport} className="projectIconAnimation3" />
-            <ProjectH2>Installation sportives</ProjectH2>
+            <ProjectH2>Sport infrastructure</ProjectH2>
             <ProjectP>
               Web application for the reservation and planification of the
               Sierre's sport infrastructure
