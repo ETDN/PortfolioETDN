@@ -145,3 +145,26 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
+
+export const ButtonA = styled.a`
+  border-radius: 50px;
+  background-color: #0072b1;
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  color: #fff;
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  font-family: var(--arame);
+  text-decoration: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+  }
+`;

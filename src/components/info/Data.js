@@ -12,16 +12,16 @@ export const homeObjOne = {
   darkText: false,
   bg_video: "../videos/retro_pool.mp4",
   button_label: "Linkedin",
-  to: "www.linkedin/in/etdn",
+  to: "http://www.linkedin.com/in/etdn/",
 };
 
 export const homeObjTwo = {
   id: "extras",
   lightText: true,
   topLine: "Extras",
-  headline: "Music & Anime ",
+  headline: "Music taste ",
   description:
-    " I listen to a lot of rap, US, UK & French rap. I also enjoy pop, like Beyoncé, The Weekend, SZA & so on and also K-pop. Additionally, I like rock, like Muse or Arctic Monkeys",
+    " I listen to a lot of rap, US, UK, French rap, pop & rock, my favorites are Post Malone, Damso, Kendrick Lamar. ",
   buttonLabel: "Open in Spotify",
   imgStart: false,
   dark: true,
@@ -29,5 +29,6 @@ export const homeObjTwo = {
   darkText: false,
   bg_video: "../videos/sunset.mp4",
   button_label: "Spotify",
-  to: "www.spotify/etdn",
+  button_color: "#1db954",
+  to: "http://open.spotify.com/user/delteodoro?si=62a8415a098545e0&nd=1",
 };

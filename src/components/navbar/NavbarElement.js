@@ -108,7 +108,7 @@ export const NavBtn = styled.div`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  background: transparent;
+  background: pink;
   white-space: nowrap;
   padding: 5px 22px;
   color: #fff;
